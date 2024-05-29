@@ -1,0 +1,146 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    background-color: #7C110C;
+    color: white;
+    padding: 10px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+td:first-child, th:first-child {
+    text-align: center;
+}
+
+td:nth-child(2) {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Slide styles */
+.slide {
+    display: none;
+    background-color: white;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide-header {
+    background-color: #d3d3d3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.slide-body {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.team-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.match-info {
+    text-align: center;
+}
+
+.navigation {
+    margin-top: 20px;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #7C110C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navigation button:hover {
+    background-color: #5a0d09;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    table {
+        width: 100%;
+    }
+
+    .slide {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .slide-header {
+        flex-direction: column;
+    }
+
+    .team-logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .match-info h2 {
+        font-size: 1.2em;
+    }
+
+    .match-info p {
+        font-size: 0.9em;
+    }
+
+    .navigation button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}

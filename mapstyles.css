@@ -1,0 +1,91 @@
+/* Styl podświetlenia */
+.highlight {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); /* Ciemniejszy kolor dla podświetlenia */
+    pointer-events: none;
+    display: none;
+    z-index: 1;
+}
+
+/* Dodatkowe style */
+img[usemap] {
+    border: none; /* Usuwa obramowanie obrazu w niektórych przeglądarkach */
+}
+
+/* Styl dla mapy, by wyglądała dobrze na stronie */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f0f0f0;
+    background-image: url('manchester_united_background.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #7C110C;
+    color: white;
+    padding: 20px;
+}
+
+header img {
+    width: 100px; /* Możesz dostosować rozmiar logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: white; /* Dodajemy białą belkę na nawigacji */
+    padding: 5px 0; /* Dodajemy odstęp dla lepszego wyglądu */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #7C110C;
+}
+div[style="position:relative;"] {
+    position: relative;
+    display: inline-block;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    main {
+        padding: 0 10px; /* Dodajemy wypełnienie na małych ekranach */
+    }
+
+    header, nav, main, footer {
+        padding: 10px; /* Dodajemy wypełnienie na małych ekranach */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* Dopuszczamy zawijanie elementów nawigacji */
+    }
+
+    nav ul li {
+        width: 100%; /* Ustawiamy szerokość na 100% dla elementów nawigacji */
+        text-align: center; /* Wyśrodkowanie tekstu */
+    }
+
+    nav ul li a {
+        padding: 10px; /* Mniejsze wypełnienie dla linków */
+    }
+}

@@ -1,0 +1,78 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f0f0f0;
+    background-image: url('manchester_united_background.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
+h2 {
+    background-color: #7C110C;
+    color: white;
+    padding: 10px;
+}
+header {
+    background-color: #7C110C;
+    color: white;
+    padding: 20px;
+}
+
+header img {
+    width: 100px; /* Możesz dostosować rozmiar logo */
+    height: auto;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: white; /* Dodajemy białą belkę na nawigacji */
+    padding: 5px 0; /* Dodajemy odstęp dla lepszego wyglądu */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #7C110C;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Dodajemy półprzezroczysty biały podkład dla tekstu */
+    border-radius: 10px; /* Zaokrąglamy rogi dla lepszego wyglądu */
+}
+
+#datetime, #counter, #time-spent {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #7C110C;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}

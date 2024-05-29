@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja - Strona o Piłce Nożnej</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="manchester_united_logo.webp" alt="Manchester United Logo">
+        <h1>Strona o Piłce Nożnej</h1>
+        <p>Autor: Aleksander Nowakowski<br>Projekt strony internetowej wykonany w ramach zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona Główna</a></li>
+            <li><a href="about.html">O nas</a></li>
+            <li><a href="news.html">Aktualności</a></li>
+            <li><a href="team.html">Drużyna</a></li>
+            <li><a href="stats.html">Statystyki</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="gallery.html">Galeria</a></li>
+            <li><a href="map.html">Mapa stadionu</a></li>
+            <li><a href="presentation.html">Prezentacja</a></li>
+            <li><a href="formularz.html">Rejestracja</a></li>
+            <li><a href="tabela.html">Tabela</a></li> 
+            <li><a href="przelicznik.html">Tworzenie Karty FIFA</a></li> 
+            <li><a href="boisko.html">Rysowanie</a></li> 
+        </ul>
+    </nav>
+    <main>
+        <h2>Rejestracja</h2>
+        <form action="mailto:jan.kowalski@example.com" method="post" enctype="text/plain">
+            <label for="name">Imię i nazwisko:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Adres e-mail:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="gender">Płeć:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Mężczyzna</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Kobieta</label><br>
+
+            <label for="interests">Zainteresowania:</label><br>
+            <input type="checkbox" id="football" name="interests" value="football">
+            <label for="football">Piłka Nożna</label>
+            <input type="checkbox" id="basketball" name="interests" value="basketball">
+            <label for="basketball">Koszykówka</label><br>
+
+            <label for="message">Wiadomość:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <label for="country">Kraj:</label><br>
+            <select id="country" name="country">
+                <option value="pl">Polska</option>
+                <option value="us">Stany Zjednoczone</option>
+                <option value="gb">Wielka Brytania</option>
+                <option value="de">Niemcy</option>
+            </select><br>
+
+            <label for="birthdate">Data urodzenia:</label><br>
+            <input type="date" id="birthdate" name="birthdate"><br>
+
+            <label for="avatar">Wybierz avatar:</label><br>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"><br>
+
+            <input type="submit" value="Zarejestruj się">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Aleksander Nowakowski. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
